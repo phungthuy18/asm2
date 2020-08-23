@@ -1,0 +1,27 @@
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Evaluate</th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.Name}}</td>
+        <td>{{this.Price}}</td>
+        <td>{{this.Evaluate}}</td>
+
+        <td>
+            <a href="/manageproduct/{{this._Id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+            <a href="/manageproduct/delete/{{this._id}}" onclick="return confirm ('Are you sure to delete this record ?');"><i class="fa fa-pencil fa-lg" aria-hidden="true""></i></a>
+            
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
