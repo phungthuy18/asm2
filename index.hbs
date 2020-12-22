@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TOMI SHOP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      
+      background-color: #f2f2f2;
+      padding: 25px;}
+  </style>
+</head>
+<body>
+
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_1280.png);" class="jumbotron" >
+  <div class="container text-center">
+    <h1 style="color: grb(rgba(0, 184, 148,0.5)) ; font-size: 120px;"> ~ TOMI SHOP ~ </h1>    
+    <h2 style="color:rgba(9, 132, 227,1.0);">Toy paradise for children</h2>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand" href="/">LOGO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">All product</a></li>
+        <li><a href="/allProduct">Product Management</a></li>
+        <li><a href="/insert">Add new product</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017__340.png);  ">    
+  <div class="row">
+    {{#each model}}
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{name}}</div>
+        <div class="panel-body">(MSP): {{MSP}}</div>
+        <div class="panel-body">(Number product): {{Sl}} Cai</div>
+        <div class="panel-footer">(Price): {{Price}} VNĐ</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div><br><br>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Connect Information</h5>
+        <p>Contact for work: 01122334455</p>
+
+      </div>
+      <!-- Grid column -->
+
+      
+
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Gmail</h5>
+        <p>Thuyptgch18662@fpt.edu.vn</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright 2020 by thuythuy
+    <a href="https://www.google.com/maps/dir//5+%C4%90%C3%B4ng+Quan,+Ngh%C4%A9a+%C4%90%C3%B4,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vietnam/@21.0408712,105.8003194,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3135ab3e8040a123:0x6415b8dea8d938a1!2m2!1d105.8025134!2d21.0408662!3e0"> 15 Dong Quan, Cau Giay, Hà nội</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

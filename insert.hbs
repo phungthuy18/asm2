@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Insert</title>
+</head>
+
+<style>
+  .header {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), url("https://cdn.pixabay.com/photo/2018/08/21/23/29/fog-3622519__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .bg-none {
+    background-color: rgba(223, 230, 233, 0.5) !important;
+  }
+  .w-50
+  {
+    width: 18em!important;
+  }
+  .container
+  {
+    color:rgba(0, 184, 148,1.0);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-12">
+        <header>
+          <h1>Add information product</h1>
+        </header>
+        <div class="input-group mb-3"></div>
+    <form action="/doInsert" method="post">
+
+        <input type="hidden" name="id" value="{{_id}}">
+        <label for="text">Name:</label><br>
+        <input type="text" value="{{name}}" name="txtName"><br>
+
+        <label for="text">MSP:</label><br>
+        <input type="text" value="{{MSP}}" name="txtMSP"><br>
+
+        <label for="text">SL:</label><br>
+        <input type="text" value="{{SL}}" name="txtSL"><br>
+
+        <label for="text">Price:</label><br>
+        <input type="text" value="{{Price}}" name="txtPrice"><br>
+
+        <input type="submit" value="Submit">
+</form>
+    </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+</html>

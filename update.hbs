@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Update information product</title>
+</head>
+<style>
+    body {
+  background-image: url("https://cdn.pixabay.com/photo/2014/02/07/10/19/winter-260817__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+</style>
+
+<body>
+    <table class="table bordered">
+        <thead>
+             <tr>
+              <th>Name</th>
+              <th>MSP</th>  
+              <th>SL</th>
+              <th>Price</th>
+            </tr>
+        </thead>
+<form action="/doupdate" method="post">
+        {{#each model}}
+        <tr>
+          <tr>
+            <input type="hidden" name="id" value="{{_id}}">
+            <td><input type="text" value= "{{name}}" name = "txtName" id=""></td>
+            <td><input type="text" value= "{{MSP}}" name = "txtMSP" id="" ></td>
+            <td><input type="text" value= "{{Sl}}" name = "txtSL" id=""></td>
+            <td><input type="text" value= "{{Price}}" name = "txtPrice" id=""></td>
+            <td><input type="submit" value="Confirm"></td>
+            <td><button><a href="/allProduct">Back</a></button></td>
+        </tr>
+        </tr>          
+        {{/each}}
+ </form>
+    </table>
+</body>
+</html>
